@@ -1,4 +1,4 @@
-📄 Crear el archivo Dockerfile
+# 📄 Crear el archivo Dockerfile
 Crea un archivo llamado Dockerfile (sin extensión) en la raíz del proyecto o junto a la carpeta publish/.
 ✨ Contenido del Dockerfile
 
