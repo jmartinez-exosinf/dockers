@@ -4,7 +4,14 @@ Crea un archivo llamado Dockerfile (sin extensión) en la raíz del proyecto o j
 
 Imagen base con IIS y .NET Framework 4.8
 ```cmd
-FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8
+FROM mcr.microsoft.com/dotnet/framework/aspnet:4.8-windowsservercore-ltsc2019
+```
+
+Crear usuario administrador usando PowerShell
+```cmd
+RUN powershell -Command \
+    "net user adminuser P@ssw0rd123 /add; \
+     net localgroup Administrators adminuser /add"
 ```
 
 Establece el directorio de trabajo en IIS
@@ -20,6 +27,11 @@ COPY publish/ .
 Exponer el puerto HTTP
 ```cmd
 EXPOSE 80
+```
+
+Establecer el usuario por defecto (opcional)
+```cmd
+# USER adminuser
 ```
 
 📝 Explicación de cada línea
