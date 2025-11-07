@@ -1,7 +1,5 @@
 # 🐳 Crear y Ejecutar una Aplicación .NET Framework 4.8 en Contenedores Windows con Docker Desktop
 
----
-
 ## 📁 Paso 1: Publicar la Aplicación desde Visual Studio
 
 1. Abre tu proyecto en Visual Studio.
