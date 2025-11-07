@@ -1,4 +1,4 @@
-# 🐳 Tutorial: Crear y Ejecutar una Aplicación .NET Framework 4.8 en Contenedores Windows con Docker Desktop
+# 🐳 Crear y Ejecutar una Aplicación .NET Framework 4.8 en Contenedores Windows con Docker Desktop
 
 ---
 
